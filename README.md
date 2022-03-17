@@ -1,31 +1,9 @@
-# A Chrome Extension Template for Firebase v9 - Based on https://github.com/extend-chrome/js-react-boilerplate
+# Color Palette Generator Chrome Extension
 
----
+This is a simple chrome extension that generatos a color palette of a page by scanning the css colors of a page.
 
-# Firebase v9 - Chrome Extension
+![image](https://user-images.githubusercontent.com/17432146/158871864-df357cdf-a8b7-4a04-ac57-e43888a3bdb9.png)
 
-### Getting Started
+![image](https://user-images.githubusercontent.com/17432146/158872012-97b7d571-25a4-4a76-9ae7-7ec35cc8b72d.png)
 
-Clone Template Repo:
-
-Make and cd into an empty folder of your choice
-
-$ `git clone https://github.com/rustyzone/crx-firebase-v9.git .`
-
-Install:
-
-Run either `npm install` or `yarn install`
-
-### Use Rollup For Dev, Builds & Releases
-
-`npm run dev` 
-
-Making changes will refresh the build for faster development
-
-`npm run build`
-
-Make builds
-
-`npm run release`
-
-Create a .zip build ready to submit to the Chrome Web Store
+Based on https://github.com/extend-chrome/js-react-boilerplate biolerplate code
