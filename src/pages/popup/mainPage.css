@@ -1,0 +1,65 @@
+
+.nav{  
+  padding: 0px;
+  width: 640px;
+  margin: 100px auto auto auto;
+}
+
+ul{  
+  list-style-type: none;
+}
+
+li a{ 
+  padding: 30px;
+  float:left;
+  width: 100px;
+  text-align:center;
+  font-size:15px;
+  text-decoration:none;
+}
+
+li a:hover .circle {
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  animation: illuminate 2s ease-out infinite;
+}
+
+li i{
+  height: 50px;
+}
+
+li a:hover i {
+  transform: translateY(-10px);
+}
+
+li a .title{
+  font-size:0px;
+}
+
+li a:hover .title {
+  transform: translateY(10px);
+  font-size: 15px;
+  transition: .5s;
+}
+       
+li a.title:hover{
+  transform: translateY(-10px);
+}
+
+@keyframes illuminate {
+  0% {
+    transform: scale(.7, .7);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100%{
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}

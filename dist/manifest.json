@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Color Palette Generator",
+  "version": "1.0.0",
+  "description": "DEVELOPMENT build with simple auto-reloader\n[2022-03-12 17:16:45] waiting for changes...",
+  "background": {
+    "scripts": [
+      "assets/index-306ef382.js",
+      "assets/background-page-reloader-ce602a94.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "declarativeContent",
+    "<all_urls>",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content-script-reloader-bc7598c9.js",
+        "assets/index-b5fba68d.js"
+      ],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_popup": "pages/popup/index.html"
+  },
+  "web_accessible_resources": [
+    "content/index.js"
+  ]
+}
